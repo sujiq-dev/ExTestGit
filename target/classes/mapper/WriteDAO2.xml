@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.lec.sts19_rest.domain.WriteDAO">
+
+
+	<!-- id는 WriteDAO.java의 메소드 이름. insert(writedto dto) -->
+	<!--  flushCache="ture"기존 DML결과 지워주는거 -->
+	<!-- 마지막 WriteDTO는 매개변수 이름. (WriteDTO, dto)의 좌측,매개변수 -->
+	<!-- pstmt의 물음표는 각자 #{넣어야 할 것들}<-getter의 값.으로 채워넣는다. ppt p37-->
+	
+
+	<!-- 매퍼파일에
+		keyProperty="uid" useGeneratedKeys="true" keyColumn="wr_uid"
+		↑ 이것을 명시하면
+		generated 된 key 값을 dto 에 받아올 수 있다!
+		
+		내 해석: 
+		새로 생성된 uid는 seq로 새 값을 받아서 keyProperty="uid'로 해서 
+		WriteDTO에 dto로 담겨올 수 있다? 
+		
+ 	--> 
+
+	<insert id="insert" flushCache="true" 
+		parameterType = "com.lec.sts19_rest.domain.WriteDTO"
+		keyProperty="uid" useGeneratedKeys="true" keyColumn="wr_uid"> 
+
+		INSERT INTO test_write
+			(wr_uid, wr_subject, wr_content, wr_name, wr_regdate)
+		VALUES
+			(test_write_seq.nextval, #{subject}, #{content}, #{name}, SYSDATE)			
+	</insert>
+	
+	
+	
+	
+<!-- 	혹은 아래처럼써도 됨				
+	<insert id="insert" flushCache="true">
+		INSERT INTO test_write
+			(wr_uid, wr_subject, wr_content, wr_name, wr_regdate)
+		VALUES
+			(test_write_seq.nextval, #{param1}, #{param2}, #{param3}, SYSDATE)
+	
+	</insert>
+ --> 
+ 
+ 
+
+
+</mapper>   
+    
+    
+    
+    
+    
+    
+    
