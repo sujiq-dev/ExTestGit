@@ -2,12 +2,13 @@
 #### A. 프로젝트명: STS19_REST<br>
 
 #### B. 프로젝트에 사용된 기술소개 <br><br>
-* @RestController를 통해 REST 방식을 구현함으로써 데이터를 response 하도록 설정. (Text, json, xml) <br>
-	1. return 방식에서 view파일로 리턴햇으나 글자 자체를 리턴가능 > data 리턴 확인 <br>
-	2. List, 배열, 자바Map<k,v> 리턴 확인 > json 리턴 확인 <br>
-	3. bean 설정, @XmlRootElemet/XmlAttribute 등의 JAXB annotation들 세팅 > xml 리턴 확인 <br>
-	4. ResponseEntity 로 response에서 나오는 코드 설정 가능 <br>
-* Postman 을 사용하여 확인<br>* Servers > server.xml > source에서  parseBodyMethods = "POST,PUT,DELETE" 추가<br>
+* *@RestController*를 통해 REST 방식을 구현함으로써 데이터를 response 하도록 설정. (Text, json, xml) <br>
+  1. return 방식에서 view파일로 리턴햇으나 글자 자체를 리턴가능 > data 리턴 확인 <br>
+  2. List, 배열, 자바Map<k,v> 리턴 확인 > json 리턴 확인 <br>
+  3. bean 설정, @XmlRootElemet/XmlAttribute 등의 JAXB annotation들 세팅 > xml 리턴 확인 <br>
+  4. ResponseEntity 로 response에서 나오는 코드 설정 가능 <br>
+* *Postman* 을 사용하여 확인<br>
+  1. *Servers* > server.xml > source에서  parseBodyMethods = "POST,PUT,DELETE" 추가<br>
 
 #### C. 프로젝트 셋업에 관한 절차
 1. 새 workspace : 폴더 생성(주어진 이름) <br>
