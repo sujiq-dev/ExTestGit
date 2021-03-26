@@ -18,15 +18,15 @@
 	>> Connector URIEncoding="utf-8" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/
 
 
-1. 환경설정
-  	- association: *.sql > sql편집기 /  *.xml > xml editor : default 설정
-	- workspace : text file encoding => utf-8
-	- WEB : CSS/HTML/JSP => utf-8
-	- WEB : HTM/JSP - editor - templates => html lang = "ko"
+3. 환경설정
+     - association: *.sql > sql편집기 /  *.xml > xml editor : default 설정 <br>
+     - workspace : text file encoding => utf-8 <br>
+     - WEB : CSS/HTML/JSP => utf-8
+     - WEB : HTM/JSP - editor - templates => html lang = "ko"
 
 4. 드라이버 관리자 : 
-	- default DB: XE
-	- libraries-all delete + c\oracle\~product\~jdbc6.jar
+     - default DB: XE
+   	- libraries-all delete + c\oracle\~product\~jdbc6.jar
 5. web.xml, servlet, pox.xml 업데이트
 
 6. import 프로젝트
