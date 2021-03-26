@@ -3,10 +3,10 @@
 
 #### B. 프로젝트에 사용된 기술소개 <br><br>
 1. *@RestController*를 통해 REST 방식을 구현함으로써 데이터를 response 하도록 설정. (Text, json, xml) <br>
-  1. return 방식에서 view파일로 리턴햇으나 글자 자체를 리턴가능 > data 리턴 확인 <br>
-  2. List, 배열, 자바Map<k,v> 리턴 확인 > json 리턴 확인 <br>
-  3. bean 설정, @XmlRootElemet/XmlAttribute 등의 JAXB annotation들 세팅 > xml 리턴 확인 <br>
-  4. ResponseEntity 로 response에서 나오는 코드 설정 가능 <br>
+  - return 방식에서 view파일로 리턴햇으나 글자 자체를 리턴가능 > data 리턴 확인 <br>
+  - List, 배열, 자바Map<k,v> 리턴 확인 > json 리턴 확인 <br>
+  - bean 설정, @XmlRootElemet/XmlAttribute 등의 JAXB annotation들 세팅 > xml 리턴 확인 <br>
+  - ResponseEntity 로 response에서 나오는 코드 설정 가능 <br>
 2. *Postman* 을 사용하여 확인<br>
   - *Servers* > server.xml > source에서  parseBodyMethods = "POST,PUT,DELETE" 추가<br>
 
