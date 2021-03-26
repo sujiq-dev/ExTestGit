@@ -12,7 +12,7 @@
 
 #### C. 프로젝트 셋업에 관한 절차
 1. 새 workspace : 폴더 생성(주어진 이름) <br>
-   1. window > perspective > open perspective > Others : spring/git <br>
+  > window > perspective > open perspective > Others : spring/git <br>
 
 2. server-tomcat 연결: <br>
   > 서버 클릭: apache > tomcat9: 설치경로 c\tomcat\apache~ > add&remove <br>
