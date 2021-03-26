@@ -17,7 +17,6 @@
 	> Servers > server.xml > source: search: 20000 해서 아래 붙여넣기 <br>
 	>> Connector URIEncoding="utf-8" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/
 
-
 3. 환경설정
      - association: *.sql > sql편집기 /  *.xml > xml editor : default 설정 <br>
      - workspace : text file encoding => utf-8 <br>
