@@ -7,18 +7,18 @@
 
 
 #### C. 프로젝트 셋업에 관한 절차
-  1. 새 workspace : 폴더 생성(주어진 이름) <br>
-		> window > perspective > open perspective > Others : spring/git <br>
+1. 새 workspace : 폴더 생성(주어진 이름) <br>
+   1. window > perspective > open perspective > Others : spring/git <br>
 
-  2. server-tomcat 연결: <br>
-		> 서버 클릭: apache > tomcat9: 설치경로 c\tomcat\apache~ > add&remove <br>
-		> port 충돌 안나게 설정 <br>
-		> 서버 더블클릭 (2+2,3 설정 후 save), <br>
-		> Servers > server.xml > source: search: 20000 해서 아래 붙여넣기 <br>
-		>> Connector URIEncoding="utf-8" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/
+2. server-tomcat 연결: <br>
+  > 서버 클릭: apache > tomcat9: 설치경로 c\tomcat\apache~ > add&remove <br>
+	> port 충돌 안나게 설정 <br>
+	> 서버 더블클릭 (2+2,3 설정 후 save), <br>
+	> Servers > server.xml > source: search: 20000 해서 아래 붙여넣기 <br>
+	>> Connector URIEncoding="utf-8" connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/
 
 
-3. 환경설정
+1. 환경설정
   	- association: *.sql > sql편집기 /  *.xml > xml editor : default 설정
 	- workspace : text file encoding => utf-8
 	- WEB : CSS/HTML/JSP => utf-8
